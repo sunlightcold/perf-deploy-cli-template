@@ -14,6 +14,9 @@ module.exports = {
     distPath: 'dist', // 本地打包dist目录
     isNpmBuild: true, // 是否需要重新打包后，再上传
     webDir: '', // // 测试环境服务器地址
+    publishSvn: false, // 是否上传svn
+    svnLocalPath: '', // 本地svn路径 d:/Project/svn/X3_ClientWeb/bills/test
+    svnCommitMsg: '', // svn 提交msg
   },
   prod: {
     // 线上环境
@@ -29,6 +32,9 @@ module.exports = {
       // 线上环境web目录, 支持多目录部署
       '',
     ],
+    publishSvn: false, // 是否上传svn
+    svnLocalPath: '', // 本地svn路径 d:/Project/svn/X3_ClientWeb/bills/test
+    svnCommitMsg: '', // svn 提交msg
   },
   // 再还有多余的环境按照这个格式写即可
 };
